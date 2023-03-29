@@ -12,13 +12,13 @@ export default async function handler(req, res) {
     const contactMediums = [
       {
         medium: "github",
-        username: "JammUtkarsh",
-        link: "https://github.com/JammUtkarsh",
+        username: "achintya-7",
+        link: "https://github.com/achintya-7",
       },
       {
         medium: "email",
-        username: "5.utkarshc@gmail.com",
-        link: "mailto:5.utkarshc@gmail.com",
+        username: "achintya22052000@gmail.com",
+        link: "achintya22052000@gmail.com",
       },
       {
         medium: "twitter",

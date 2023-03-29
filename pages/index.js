@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Utkarsh Chourasia</title>
+        <title>Achintya</title>
         <link rel="My Icon" href="/favicon.png" />
       </Head>
       <h1>
-        Utkarsh:$ <span className={styles.help}>type help to start</span>
+        Achintya:$ <span className={styles.help}>type help to start</span>
       </h1>
       <p>
         Visit{" "}

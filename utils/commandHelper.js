@@ -4,6 +4,10 @@ const COMMANDS = [
     description: "About Me",
   },
   {
+    command: "neofetch",
+    description: "My System Info",
+  },
+  {
     command: "education",
     description: "My Education",
   },
@@ -95,17 +99,15 @@ export const CONTENTS = {
     `<br />
       <div class="command">Type one of the above to view. For eg. <span style="color: var(--secondary)">about</span></div>`,
   // Yash
-  about: () => `My name is Utkarsh Chourasia. I am ${getAge(
-    "Augest 5, 2001"
-  )} and I\'m a DevOps/Backend developer.
+  about: () => `My name is Achintya. I am a Go and Flutter developer. Currently working as a Go Backend Developer
     <br/><br/>
-    I am a highly organized and detail-oriented student. I love to meet new people, learn and teach new things. An aspiring modern magician, except I transform complicated technical ideas into executable forms
+    I have huge interest in building Mobile apps and exploring various Backend technologies. Also a Blogger on the side and an advocate of Open Source. 
     <br/><br/>
-    I prefer programming in Golang and C++. I try to dockerize a lot of my projects. Even my laptop is filled with containers rather than packages.
+    A little bit into DevOps, Docker and AI. Massively into Hip-Hop, Video Games and Anime.
     <br/><br/>
   `,
   // Yash
-  education: () => `I am currently pursuing a bachelor's in Computer Science Engineering from <a href="https://www.medicaps.ac.in/"> Medicaps University</a>.`,
+  education: () => `I am currently in my pre-final year (3rd year) of Bachelor's in Computer Science Engineering from Amity University, Noida.`,
 
   skills: () => `
   <div class="skill"><b>Language</b>: Go, C++, Bash<br /></div>
@@ -128,13 +130,3 @@ export const CONTENTS = {
   },
 };
 
-function getAge(dateString) {
-  const today = new Date();
-  const birthDate = new Date(dateString);
-
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const m = today.getMonth() - birthDate.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
-
-  return age;
-}
