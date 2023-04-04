@@ -8,11 +8,11 @@ const COMMANDS = [
     description: "My System Info",
   },
   {
-    command: "education",
+    command: "edu",
     description: "My Education",
   },
   {
-    command: "experience",
+    command: "exp",
     description: "My Experience",
   },
   {
@@ -98,7 +98,7 @@ export const CONTENTS = {
     ).join("") +
     `<br />
       <div class="command">Type one of the above to view. For eg. <span style="color: var(--secondary)">about</span></div>`,
-  // Yash
+  
   about: () => `My name is Achintya. I am a Go and Flutter developer. Currently working as a Go Backend Developer
     <br/><br/>
     I have huge interest in building Mobile apps and exploring various Backend technologies. Also a Blogger on the side and an advocate of Open Source. 
@@ -106,12 +106,13 @@ export const CONTENTS = {
     A little bit into DevOps, Docker and AI. Massively into Hip-Hop, Video Games and Anime.
     <br/><br/>
   `,
-  // Yash
-  education: () => `I am currently in my pre-final year (3rd year) of Bachelor's in Computer Science Engineering from Amity University, Noida.`,
+  
+  edu: () => `I am currently in my pre-final year (3rd year) of Bachelor's in Computer Science Engineering from Amity University, Noida.`,
 
   skills: () => `
-  <div class="skill"><b>Language</b>: Go, C++, Bash<br /></div>
-  <div class="skill"><b>Tools</b>: Docker, AWS, Github Actions, Netify, GNU/Linux<br /></div>
+  <div class="skill"><b>Language</b>: Go, Dart, Java, Python<br /></div>
+  <div class="skill"><b>Frameworks</b>: Flutter, Gin, Fiber, FastAPI<br /></div>
+  <div class="skill"><b>Tools</b>: Docker, GCP, Github Actions, Linux, GetX, gRPC<br /></div>
   <br />
   <br />
   <b>Outside Computer Science</b>
