@@ -28,28 +28,14 @@ export default async function handler(req, res) {
         description:
           "A Go cli tool to generate boilerplate code for a project. It's generates a project structure for a Go, Gin, Postgres project with SQLc.",
         stack: ["Go"],
-        link: "https://github.com/JammUtkarsh/assignment-parse",
+        link: "https://github.com/achintya-7/genie-gen",
       },
       {
-        name: "Grec",
+        name: "Election DAPP",
         description:
-          "A data entry app based on CLI.",
-        stack: ["Go"],
-        link: "https://github.com/JammUtkarsh/grec",
-      },
-      {
-        name: "Go Web Server",
-        description:
-          "This project serves many purposes. It is getting started guide for GitHub Actions. Using GitHub actions, we are pushing the Docker image built in cloud to Docker Registry. The image is a go web server for static webpages.",
-        stack: ["Docker", "Go", "CI/CD", "Github Actions"],
-        link: "https://github.com/JammUtkarsh/go-web-server",
-      },
-      {
-        name: "Home Server",
-        description:
-          "I upgraded my potato PC to my local home server. It's served as a remote development, a media server, a remote backup and many more minor tasks. <i>The reffered link is the site which helped to do all the jobs using Docker</i>",
-        stack: ["Ubuntu Server", "Docker"],
-        link: "https://fleet.linuxserver.io/",
+          "A Decentralized Application to conduct elections. It's a full stack app with a Flutter and a Solidity, Ethereum.",
+        stack: ["Flutter", "Solidity", "Ethereum"],
+        link: "https://github.com/achintya-7/Election-DAPP",
       },
     ];
 

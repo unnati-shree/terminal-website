@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { CONTENTS } from "../utils/commandHelper";
 import Command from "./Command";
 import styles from "./Terminal.module.css";
@@ -7,6 +7,16 @@ export default function Terminal() {
   const [commands, setCommands] = useState([]);
   const [loading, setLoading] = useState(false);
   const terminalRef = useRef(null);
+  const [list, setList] = useState([]);
+
+  useEffect(() => {
+    const storedList = JSON.parse(localStorage.getItem("commands"));
+    if (storedList) {
+      setList(storedList);
+    } else {
+      localStorage.setItem("commands", JSON.stringify([]));
+    }
+  }, []);
 
   const escapeHTML = (str) =>
     str
@@ -19,6 +29,11 @@ export default function Terminal() {
   const addCommand = async (command) => {
     let output;
     setLoading(true);
+    
+    const updatedList = [...list, command];
+    setList(updatedList);
+    localStorage.setItem('commands', JSON.stringify(updatedList));
+    
     setCommands([...commands, { command, output: "Loading..." }]);
     if (`${command}` in CONTENTS) {
       output = await CONTENTS[`${command}`]();

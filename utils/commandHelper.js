@@ -54,6 +54,7 @@ const getProjects = async () => {
       .join("");
   return projectHTML;
 };
+
 const getExperience = async () => {
   const experience = await (await fetch("/api/experience")).json();
   const projectHTML =
@@ -120,7 +121,7 @@ export const CONTENTS = {
 <br />
   `,
   projects: getProjects,
-  experience: getExperience,
+  exp: getExperience,
   contact: getContacts,
   error: (input) =>
     `<div class="help-command">sh: Unknown command: ${input}</div><div class="help-command">See \`help\` for info`,
