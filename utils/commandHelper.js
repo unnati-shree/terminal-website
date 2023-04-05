@@ -114,10 +114,9 @@ export const CONTENTS = {
   <div class="skill"><b>Frameworks</b>: Flutter, Gin, Fiber, FastAPI<br /></div>
   <div class="skill"><b>Tools</b>: Docker, GCP, Github Actions, Linux, GetX, gRPC<br /></div>
   <br />
+  <b>Other Stuff:</b>
   <br />
-  <b>Outside Computer Science</b>
-  <br />
-  <div class="skill"><b>Interests</b>: Books, Music, Finance, Human Psychology<br /></div>
+  <div class="skill"><b>Hobbies</b>: Blogging, Hip Hop, Anime, Rock<br /></div>
 <br />
   `,
   projects: getProjects,

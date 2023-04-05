@@ -11,23 +11,22 @@ export default async function handler(req, res) {
   if (req.method === "GET") {
     const projects = [
       {
-        name: "Shared Clipboard",
-        description:
-          "It's a simple app which let you share text data between computers in CLI.",
-        stack: ["Go", "HTTP"],
-        link: "https://github.com/JammUtkarsh/shared-clipboard",
+        name: "Car Pooling App",
+        description: "It's a monile app which helps to find carpooling partners who are going to the same destination. \nIt's a full stack app with a Flutter frontend and a Go backend.",
+        stack: ["Go", "Gin", "Flutter", "MongoDB"],
+        link: "https://github.com/achintya-7/CarPooling",
       },
       {
-        name: "Spell-Ez",
+        name: "Go SocketIO",
         description:
-          "A simple TTS app to improve your spelling, running in CLI",
-        stack: ["Python"],
-        link: "https://github.com/JammUtkarsh/Spell-Ez-Python",
+          "A socket server written in Go. It's a simple chat server with features like Update, Delete and Reply to Chats.",
+        stack: ["Go", "MongoDB"],
+        link: "https://github.com/achintya-7/go-socketio",
       },
       {
-        name: "Assignment Parser",
+        name: "Genie Gen",
         description:
-          "A script to parse through terminal sql output to sql commmands.",
+          "A Go cli tool to generate boilerplate code for a project. It's generates a project structure for a Go, Gin, Postgres project with SQLc.",
         stack: ["Go"],
         link: "https://github.com/JammUtkarsh/assignment-parse",
       },
