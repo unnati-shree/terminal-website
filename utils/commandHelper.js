@@ -28,7 +28,7 @@ const COMMANDS = [
     description: "Contact Me",
   },
   {
-    command: "blog",
+    command: "blogs",
     description: "Visit my blog",
   },
   {
@@ -39,6 +39,21 @@ const COMMANDS = [
   },
 ];
 
+const getBlogs = async () => {
+  const blogs = await (await fetch("api/blogs")).json();
+  const blogHTML =
+    `<h3>My Blogs (You can scroll)</h3>` +
+    blogs
+      .map(
+        (blog) => `<div class="command">
+        <a href="https://achintya-7.hashnode.dev/${blog.slug}" target="_blank"><b class="command">${blog.title}</b></a>
+        <p class="meaning">${blog.brief}</p>
+      </div>`
+      )
+      .join("");
+  return blogHTML;
+}
+
 const getProjects = async () => {
   const projects = await (await fetch("/api/projects")).json();
   const projectHTML =
@@ -46,8 +61,7 @@ const getProjects = async () => {
     projects
       .map(
         (project) => `<div class="command">
-        <a href="${project.link}" target="_blank"><b class="command">${project.name
-          }</b></a> - <b>${project.stack.join(", ")}</b>
+        <a href="${project.link}" target="_blank"><b class="command">${project.name}</b></a> - <b>${project.stack.join(", ")}</b>
         <p class="meaning">${project.description}</p>
       </div>`
       )
@@ -78,7 +92,7 @@ const getExperience = async () => {
 };
 
 const getContacts = async () => {
-  const contactMediums = await (await fetch("/api/blog")).json();
+  const contactMediums = await (await fetch("/api/contacts")).json();
   return contactMediums
     .map(
       (contact) => `<div style="display: flex; justify-content: space-between;">
@@ -88,6 +102,8 @@ const getContacts = async () => {
     )
     .join("");
 };
+
+
 
 export const CONTENTS = {
   help: () =>
@@ -123,11 +139,8 @@ export const CONTENTS = {
   projects: getProjects,
   exp: getExperience,
   contact: getContacts,
-  error: (input) =>
-    `<div class="help-command">sh: Unknown command: ${input}</div><div class="help-command">See \`help\` for info`,
-  blog: () => {
-    window.open("https://blog-utkarshchourasia-in.vercel.app/", "_blank");
-    return "";
-  },
+  blogs: getBlogs,
+  error: (input) =>    `<div class="help-command">sh: Unknown command: ${input}</div><div class="help-command">See \`help\` for info`,
+  
 };
 
