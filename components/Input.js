@@ -28,7 +28,7 @@ export default function Input({ command, onSubmit }) {
 
       if (list.length > 0 && index.current < list.length) {
         console.log("Index : ", list.length - index.current)
-        const command = list[list.length - index.current]
+        const command = list[list.length - index.current - 1]
         console.log(command)
         setCommand(command);
         index.current = index.current + 1;
