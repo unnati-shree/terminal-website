@@ -78,7 +78,7 @@ const getExperience = async () => {
 };
 
 const getContacts = async () => {
-  const contactMediums = await (await fetch("/api/contacts")).json();
+  const contactMediums = await (await fetch("/api/blog")).json();
   return contactMediums
     .map(
       (contact) => `<div style="display: flex; justify-content: space-between;">

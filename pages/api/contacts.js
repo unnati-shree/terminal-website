@@ -11,24 +11,29 @@ export default async function handler(req, res) {
   if (req.method === "GET") {
     const contactMediums = [
       {
-        medium: "github",
+        medium: "GitHub",
         username: "achintya-7",
         link: "https://github.com/achintya-7",
       },
       {
-        medium: "email",
+        medium: "Email",
         username: "achintya22052000@gmail.com",
         link: "achintya22052000@gmail.com",
       },
       {
-        medium: "twitter",
-        username: "JammUtkarsh",
-        link: "https://twitter.com/JammUtkarsh",
+        medium: "Twitter",
+        username: "achintya-7",
+        link: "https://twitter.com/achintya2205",
       },
       {
-        medium: "linkedin",
-        username: "5utkarshc",
-        link: "https://www.linkedin.com/in/jammutkarsh/",
+        medium: "LinkedIn",
+        username: "Achintya Singh",
+        link: "https://www.linkedin.com/in/achintya-singh-4b4563200/",
+      },
+      {
+        medium: "Hashnode",
+        username: "Achintya",
+        link: "https://achintya-7.hashnode.dev/",
       },
     ];
 

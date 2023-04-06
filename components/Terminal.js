@@ -30,9 +30,11 @@ export default function Terminal() {
     let output;
     setLoading(true);
     
-    const updatedList = [...list, command];
-    setList(updatedList);
-    localStorage.setItem('commands', JSON.stringify(updatedList));
+    if (command !== "") {
+      const updatedList = [...list, command];
+      setList(updatedList);
+      localStorage.setItem('commands', JSON.stringify(updatedList));
+    }
     
     setCommands([...commands, { command, output: "Loading..." }]);
     if (`${command}` in CONTENTS) {
