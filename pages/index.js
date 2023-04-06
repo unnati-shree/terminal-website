@@ -16,7 +16,7 @@ export default function Home() {
       </h1>
       <p>
         Visit{" "}
-        <a href="https://n.utkarshchourasia.in/" target="_blank" rel="noreferrer">
+        <a href="https://achintya-7.github.io/" target="_blank" rel="noreferrer">
           Normal website
         </a>
       </p>
