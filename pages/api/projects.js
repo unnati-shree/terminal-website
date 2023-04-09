@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     const projects = [
       {
         name: "Car Pooling App",
-        description: "It's a monile app which helps to find carpooling partners who are going to the same destination. \nIt's a full stack app with a Flutter frontend and a Go backend.",
+        description: "It's a mobile app which helps to find carpooling partners who are going to the same destination. \nIt's a full stack app with a Flutter frontend and a Go backend.",
         stack: ["Go", "Gin", "Flutter", "MongoDB"],
         link: "https://github.com/achintya-7/CarPooling",
       },
